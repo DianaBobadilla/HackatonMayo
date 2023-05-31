@@ -16,7 +16,6 @@ body {
   align-items: center;
 }
 
-
 .container {
   margin-top: 50px;
 }
@@ -37,8 +36,10 @@ td {
 
 .race-track {
   position: relative;
-  width: 800px;
-  height: 400px;
+  width: 100%;
+  max-width: 800px;
+  height: 0;
+  padding-bottom: 50%;
   margin: 0 auto;
   background-image: url("../IMG/pistas.png");
   background-size: 100% 100%;
@@ -47,7 +48,8 @@ td {
 .car {
   position: absolute;
   bottom: 0;
-  height: 80px;
+  height: 10%;
+  width: auto;
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -67,14 +69,14 @@ td {
   }
 
   100% {
-    left: 770px;
+    left: 90%;
   }
 }
 
 #finish-line {
   position: absolute;
   top: 0;
-  left: 790px;
+  right: 0;
   width: 10px;
   height: 100%;
   background-color: #eeeeee;
@@ -99,4 +101,15 @@ td {
 
 #winner-message button:hover {
   background-color: #eeeeee;
+}
+
+@media (max-width: 768px) {
+  .race-track {
+    max-width: 500px;
+    padding-bottom: 30%;
+  }
+
+  .car {
+    height: 15%;
+  }
 }
