@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+  margin: 1rem;
+  margin-left: 1rem;
+  font-family: Arial, sans-serif;
+  background-image: url("https://img.freepik.com/vector-gratis/coche-conducir-noche-camino-ciudad-vista-interior-vector_107791-19749.jpg?w=1380&t=st=1685552177~exp=1685552777~hmac=1e9762509352c3c160da09d87aacadf1a29788271b6203d212dc72e367e36c93");
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  max-width: 22rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.login-form {
+  flex: 1;
+  min-height: 20rem;
+  padding: 2rem 3rem;
+  background-color: rgba(242, 242, 242, 0.85);
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  gap: 1rem;
+  transition: transform 0.3s ease-in-out;
+  padding: 1.25rem;
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.login-form:hover {
+  transform: scale(1.05);
+}
+
+.login-form h2 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form p {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.66);
+}
+
+.login-form button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #021326;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-form button:hover {
+  background: #011e28;
+  background-image: linear-gradient(0deg, #074d66 0%, #015371 0%, #021326 100%);
+}
+
+.label {
+  color: aliceblue;
+}
+
+@media only screen and (max-width: 767px) {
+  .form-container {
+    flex-direction: column;
+  }
+
+  .login-form {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+  }
+}

@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("https://img.freepik.com/vector-gratis/interior-atico-casa-noche-vieja-mansarda-vacia-iluminada-luz-luna-cayendo-traves-ventana-redonda_107791-6465.jpg");
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+    padding: 1rem;
+  }
+}
