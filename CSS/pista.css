@@ -7,13 +7,18 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: rgba(255, 255, 255, 0.5);
-  background-image: url("../IMG/luz.png");
-  background-size: cover;
+  background-image: url("../IMG/pistaplana.png");
+  /* background-image: url("../IMG/luz.png"); */
+  background-size: contain;
+  /* Ajusta el tamaño de la imagen para que se ajuste al contenedor sin desbordarse */
   background-repeat: no-repeat;
+  /* Evita que la imagen se repita */
   background-position: center;
+  /* Centra la imagen vertical y horizontalmente en el contenedor */
   min-height: 100vh;
   display: flex;
   align-items: center;
+  background-color: #1d1d1d;
 }
 
 .container {
@@ -41,14 +46,19 @@ td {
   height: 0;
   padding-bottom: 50%;
   margin: 0 auto;
-  background-image: url("../IMG/pistas.png");
-  background-size: 100% 100%;
+  /* background-image: url("../IMG/pistas.png"); */
+  background-size: contain;
+  /* Ajusta el tamaño de la imagen de la pista para que se ajuste al contenedor sin desbordarse */
+  background-repeat: no-repeat;
+  /* Evita que la imagen de la pista se repita */
+  background-position: center;
+  /* Centra la imagen de la pista vertical y horizontalmente en el contenedor */
 }
 
 .car {
   position: absolute;
   bottom: 0;
-  height: 10%;
+  height: 20%;
   width: auto;
   animation-duration: 5s;
   animation-timing-function: linear;
@@ -79,7 +89,7 @@ td {
   right: 0;
   width: 10px;
   height: 100%;
-  background-color: #eeeeee;
+  background-color: #eeeeee00;
 }
 
 .hidden {
