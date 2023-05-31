@@ -20,23 +20,28 @@
     <h2 class="label">Registro de Usuario</h2>
     <form id="registroForm">
       <div class="form-group">
-        <label for="nombre" class="label">Nombre:</label>
+        <label for="nombre" class="label">Nombre: *</label>
         <input type="text" class="form-control" id="nombre" required>
       </div>
       <div class="form-group">
-        <label for="email" class="label">Email:</label>
+        <label for="email" class="label">Email: *</label>
         <input type="email" class="form-control" id="email" required>
       </div>
       <div class="form-group">
-        <label for="contrasena" class="label">Contraseña:</label>
+        <label for="contrasena" class="label">Contraseña: *</label>
         <input type="password" class="form-control" id="contrasena" required>
+        <hr>
+        <p class="label">*Campos obligatorios</p>
       </div>
       <button type="submit" class="btn btn-info">Registrarse</button>
+			<hr>
+			<p class="label">¿Ya te registraste?</p>
+			<p class="label"><a href="./login.html" target="_blank">Inicia sesión aquí</a></p>
     </form>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="./JS/registro.js"></script>
 </body>
 

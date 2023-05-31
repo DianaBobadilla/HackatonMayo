@@ -1,13 +1,13 @@
 document.getElementById('nombreForm').addEventListener('submit', function (event) {
   event.preventDefault();
 
-  var nombreUsuario = document.getElementById('nombre').value;
+  let nombreUsuario = document.getElementById('nombre').value;
 
   openNewTab(nombreUsuario);
 });
 
 function openNewTab(nombreUsuario) {
-  var newTab = window.open('', '_blank');
+  let newTab = window.open('', '_blank');
   newTab.document.write(`
     <html>
       <head>
@@ -31,8 +31,8 @@ function openNewTab(nombreUsuario) {
 }
 
 function showGreeting(nombreUsuario) {
-  var saludoDiv = window.opener.document.getElementById('saludo');
+  let saludoDiv = window.opener.document.getElementById('saludo');
   saludoDiv.style.display = 'block';
-  var nombreUsuarioSpan = window.opener.document.getElementById('nombreUsuario');
+  let nombreUsuarioSpan = window.opener.document.getElementById('nombreUsuario');
   nombreUsuarioSpan.textContent = nombreUsuario;
 }

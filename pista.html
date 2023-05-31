@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pista</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="./IMG/volanteico.png" />
+  <link rel="stylesheet" href="./CSS/pista.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Carrera</h1>
+    <div class="instructions">
+      <h2>Instrucciones:</h2>
+      <p>Utiliza las teclas de flecha (←, ↑, →) para avanzar el carro...</p>
+    </div>
+    <div class="race-track">
+      <img src="./IMG/carroazul.png" id="car1" class="car">
+      <img src="./IMG/carrorojo.png" id="car2" class="car">
+      <div id="finish-line"></div>
+    </div>
+    <table class="table scoreboard">
+      <thead>
+        <tr>
+          <th scope="col">Player 1</th>
+          <th scope="col">Player 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="score1">0</td>
+          <td id="score2">0</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="winner-message" class="hidden">
+      <h2>Increíble, ¡Tenemos un ganador!</h2>
+      <p id="winner"></p>
+      <button onclick="restartRace()">Reiniciar Carrera</button>
+    </div>
+  </div>
+
+  <script src="./JS/pista.js"></script>
+</body>
+
+</html>

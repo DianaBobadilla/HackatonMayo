@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image: url("../IMG/luz.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+
+.container {
+  margin-top: 50px;
+}
+
+h1,
+h2,
+p,
+thead,
+tbody,
+tr,
+td {
+  color: #f3f3f3;
+}
+
+.instructions {
+  margin: 20px 0;
+}
+
+.race-track {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  background-image: url("../IMG/pistas.png");
+  background-size: 100% 100%;
+}
+
+.car {
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#car1 {
+  left: 10px;
+}
+
+#car2 {
+  right: 10px;
+}
+
+@keyframes moveCar {
+  0% {
+    left: 10px;
+  }
+
+  100% {
+    left: 770px;
+  }
+}
+
+#finish-line {
+  position: absolute;
+  top: 0;
+  left: 790px;
+  width: 10px;
+  height: 100%;
+  background-color: #eeeeee;
+}
+
+.hidden {
+  display: none;
+}
+
+#winner-message {
+  margin-top: 50px;
+}
+
+#winner-message button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #1d1d1d;
+  color: #eeeeee;
+  border: none;
+  cursor: pointer;
+}
+
+#winner-message button:hover {
+  background-color: #eeeeee;
+}

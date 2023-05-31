@@ -91,6 +91,16 @@ body {
 
 .label {
   color: aliceblue;
+  text-decoration: none;
+}
+
+.label p {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.label a {
+  color: rgb(250, 250, 250);
 }
 
 .form-control {

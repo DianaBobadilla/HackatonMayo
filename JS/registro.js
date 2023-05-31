@@ -2,11 +2,11 @@
 document.getElementById('registroForm').addEventListener('submit', function (event) {
   event.preventDefault();
 
-  var nombre = document.getElementById('nombre').value;
-  var email = document.getElementById('email').value;
-  var contrasena = document.getElementById('contrasena').value;
+  let nombre = document.getElementById('nombre').value;
+  let email = document.getElementById('email').value;
+  let contrasena = document.getElementById('contrasena').value;
 
-  var usuario = {
+  let usuario = {
     nombre: nombre,
     email: email,
     contrasena: contrasena
@@ -29,10 +29,10 @@ document.getElementById('registroForm').addEventListener('submit', function (eve
 document.getElementById('loginForm').addEventListener('submit', function (event) {
   event.preventDefault();
 
-  var email = document.getElementById('email').value;
-  var contrasena = document.getElementById('contrasena').value;
+  let email = document.getElementById('email').value;
+  let contrasena = document.getElementById('contrasena').value;
 
-  var usuario = JSON.parse(localStorage.getItem(email));
+  let usuario = JSON.parse(localStorage.getItem(email));
 
   if (usuario && usuario.contrasena === contrasena) {
     Swal.fire({
@@ -53,3 +53,4 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
     });
   }
 });
+

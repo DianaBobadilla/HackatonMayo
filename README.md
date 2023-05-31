@@ -12,7 +12,7 @@ Sumérgete en la emocionante Carrera de Carros, donde la adrenalina está al má
 
 Imagina la sensación del viento en tu rostro, el rugir de los motores y la competencia feroz mientras te abres camino hacia la cima. En DashForce, tendrás la oportunidad de acelerar al máximo y desafiar a tus oponentes en una pista llena de emoción y velocidad.
 
-El objetivo es simple: ser el primero en cruzar la línea de meta y reclamar la victoria. Prepárate para maniobrar entre curvas cerradas, esquivar obstáculos y mantener tu velocidad para superar a tus rivales. Cada movimiento cuenta y cualquier error puede dejarte atrás, por lo que la estrategia y la destreza son clave para alcanzar el éxito.
+El objetivo es simple: ser el primero en cruzar la línea de meta y reclamar la victoria. Prepárate para maniobrar entre curvas cerradas, esquilet obstáculos y mantener tu velocidad para superar a tus rivales. Cada movimiento cuenta y cualquier error puede dejarte atrás, por lo que la estrategia y la destreza son clave para alcanzar el éxito.
 
 DashForce te invita a poner a prueba tus habilidades de manejo y competir contra otros pilotos en una carrera llena de emoción. Demuestra tu destreza al volante, traza tus propias estrategias y lleva tu carro a la victoria.
 

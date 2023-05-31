@@ -51,27 +51,27 @@
   <script>
     document.getElementById("playerForm").addEventListener("submit", function(event) {
       event.preventDefault();
-      var playerName = document.getElementById("playerName").value;
+      let playerName = document.getElementById("playerName").value;
       startRace(playerName);
     });
 
     document.getElementById("playButton").addEventListener("click", function() {
-      var audio = document.getElementById("backgroundAudio");
+      let audio = document.getElementById("backgroundAudio");
       audio.play();
     });
 
     function startRace(playerName) {
-      var car1 = document.getElementById("car1");
-      var car2 = document.getElementById("car2");
+      let car1 = document.getElementById("car1");
+      let car2 = document.getElementById("car2");
       
-      var distance = 550; // Distancia total de la carrera
-      var car1Position = 1; // Posición actual del carro 1
-      var car2Position = 0; // Posición actual del carro 2
+      let distance = 550; // Distancia total de la carrera
+      let car1Position = 1; // Posición actual del carro 1
+      let car2Position = 0; // Posición actual del carro 2
       
-      var interval = setInterval(function() {
+      let interval = setInterval(function() {
         // Generar un número aleatorio para la velocidad de los carros
-        var car1Speed = Math.random() * 10;
-        var car2Speed = Math.random() * 10;
+        let car1Speed = Math.random() * 10;
+        let car2Speed = Math.random() * 10;
         
         // Actualizar la posición de los carros en la pista
         car1Position += car1Speed;
